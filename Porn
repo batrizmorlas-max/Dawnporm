@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Plataforma</title><style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    padding-bottom:70px;
+}
+
+header{
+    position:sticky;
+    top:0;
+    background:#111;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.search{
+    width:140px;
+    padding:8px;
+    border:none;
+    border-radius:20px;
+    background:#222;
+    color:white;
+}
+
+.container{
+    padding:15px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.card{
+    background:#181818;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.thumb{
+    width:100%;
+    height:120px;
+    background:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#aaa;
+}
+
+.info{
+    padding:10px;
+}
+
+.title{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.views{
+    font-size:12px;
+    color:#999;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#111;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    border-top:1px solid #222;
+}
+
+.bottom-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+    .video-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+</style></head>
+<body><header>
+    <div class="logo">MiSitio</div>
+    <input class="search" type="text" placeholder="Buscar">
+</header><div class="container">
+    <div class="video-grid">    <div class="card">
+        <div class="thumb">Miniatura</div>
+        <div class="info">
+            <div class="title">Título del contenido</div>
+            <div class="views">10K vistas</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">Miniatura</div>
+        <div class="info">
+            <div class="title">Título del contenido</div>
+            <div class="views">25K vistas</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">Miniatura</div>
+        <div class="info">
+            <div class="title">Título del contenido</div>
+            <div class="views">7K vistas</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">Miniatura</div>
+        <div class="info">
+            <div class="title">Título del contenido</div>
+            <div class="views">50K vistas</div>
+        </div>
+    </div>
+
+</div>
+
+</div><nav class="bottom-nav">
+    <a href="#">Inicio</a>
+    <a href="#">Explorar</a>
+    <a href="#">Subir</a>
+    <a href="#">Perfil</a>
+</nav></body>
+</html>
